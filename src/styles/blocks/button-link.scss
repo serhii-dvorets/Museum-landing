@@ -26,16 +26,19 @@
     background-image: url("/images/icons/arrowRight.svg");
     background-repeat: no-repeat;
     background-position: center;
-    transition: all 0.2s ease 0s;
-    perspective: 100px;
 
-    &:hover {
-      transform: scale(1.1);
-      border-radius: 5px;
-    }
-
-    &:active {
-      transform: scale(0.9);
+    @include onDesktop {
+      transition: all 0.2s ease 0s;
+      perspective: 100px;
+  
+      &:hover {
+        transform: scale(1.1);
+        border-radius: 5px;
+      }
+  
+      &:active {
+        transform: scale(0.9);
+      }
     }
   }
 }
