@@ -64,6 +64,7 @@
   }
   &__vertical {
     display: none;
+
     @include onDesktop {
       display: grid;
       grid-template-columns: 1 / 1;
@@ -81,6 +82,17 @@
     color: transparent;
     transform: rotate(-90deg);
     text-decoration: none;
+
+    transition: all 0.2s ease 0s;
+
+    &:hover {
+      transform: scale(1.1);
+      transform: translateX(70px);
+    }
+
+    &:active {
+      transform: scale(1.2);
+    }
 
     &::before {
       display: block;

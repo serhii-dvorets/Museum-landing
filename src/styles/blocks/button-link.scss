@@ -14,15 +14,28 @@
   &__button {
     height: 50px;
     width: 50px;
+
     @include onTablet {
       height: 70px;
       width: 70px;
     }
+
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url("/images/icons/arrowRight.svg");
     background-repeat: no-repeat;
     background-position: center;
+    transition: all 0.2s ease 0s;
+    perspective: 100px;
+
+    &:hover {
+      transform: scale(1.1);
+      border-radius: 5px;
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
   }
 }

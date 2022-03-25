@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NA MU</title>
+  <title>Museum</title>
+  <link rel="icon" href="./images/icons/NA MU.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,500;0,600;0,700;1,400&family=Montserrat:wght@400;700&display=swap"
-    rel="stylesheet">
+  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,500;0,600;0,700;1,400&family=Montserrat:wght@400;700&display=swap"
+  rel="stylesheet">
   <link rel="stylesheet" href="./styles/main.scss">
 </head>
 
@@ -17,12 +18,12 @@
 
   <header class="header container__header">
     <div class="container grid grid__top-actions">
-      <nav class="nav nav__menu-opener">
+      <nav class="nav nav__menu-opener animation">
         <a href="#menu">
           <img src="./images/menu-opener-logo.png" alt="Menu opener">
         </a>
       </nav>
-      <div class="nav__logo">
+      <div class="nav__logo animation">
         <a href="#" class="nav__link">
           NA<br>MU
         </a>
@@ -80,7 +81,7 @@
       <div class="container">
         <h2 class="events__title">Актуальні події</h2>
         <div class="events__block">
-          <img src="./images/pictures/content-1.png" alt="content__picture-1" class="events__picture">
+          <img src="./images/pictures/content-1.png" alt="content__picture-1" class="events__picture animation">
           <div class="events__info">
             <div class="events__schedule">
               <div class="events__event">ВИСТАВКА</div>
@@ -96,7 +97,7 @@
           </div>
         </div>
         <div class="events__block">
-          <img src="./images/pictures/content-2.png" alt="content__picture-2" class="events__picture">
+          <img src="./images/pictures/content-2.png" alt="content__picture-2" class="events__picture animation">
           <div class="events__info">
             <div class="events__schedule">
               <div class="events__event">ВИСТАВКА</div>
@@ -132,23 +133,23 @@
         <h2 class="events__title">Галерея</h2>
         <div class="slider__window">
           <div class="slider__container">
-            <div class="slider__item slider__item--1">
+            <div class="slider__item slider__item--1 animation">
               <img class="slider__picture slider__picture--1" src="/images/pictures/slider-1.png"
                 alt="slider__picture-1">
             </div>
-            <div class="slider__item slider__item--2">
+            <div class="slider__item slider__item--2 animation">
               <img class="slider__picture slider__picture--2" src="/images/pictures/slider-2.png"
                 alt="slider__picture-2">
             </div>
-            <div class="slider__item slider__item--3">
+            <div class="slider__item slider__item--3 animation">
               <img class="slider__picture slider__picture--3" src="/images/pictures/slider-3.png"
                 alt="slider__picture-3">
             </div>
-            <div class="slider__item slider__item--4">
+            <div class="slider__item slider__item--4 animation">
               <img class="slider__picture slider__picture--4" src="/images/pictures/slider-4.png"
                 alt="slider__picture-4">
             </div>
-            <div class="slider__item slider__item--5">
+            <div class="slider__item slider__item--5 animation">
               <img class="slider__picture slider__picture--5" src="/images/pictures/slider-5.png"
                 alt="slider__picture-4">
             </div>
@@ -164,7 +165,14 @@
           Бути в курсі всіх актуальних подій та останніх новин.
         </p>
         <form action="mailto:info@namu.kiev.ua" class="button-link">
-          <input type="email" placeholder="E-mail" required class="button-link__title subscription__button-link--title">
+          <input
+            type="email"
+            name="input"
+            placeholder="E-mail"
+            required
+            class="button-link__title subscription__button-link--title"
+            value=""
+          >
           <button type="submit" class="button-link__button subscription__button"></button>
         </form>
       </div>
@@ -172,14 +180,14 @@
 
     <section class="about grid" id="contacts">
       <div class="about__logo">
-        <div class="about__nav--logo nav__logo">
+        <div class="about__nav--logo nav__logo animation">
           <a href="#" class="nav__link">
             NA<br>MU
           </a>
         </div>
         <div class="about__icons">
-          <a href="https://www.facebook.com/" class="about__icon about__icon--facebook" target="blank"></a>
-          <a href="https://www.instagram.com/" class="about__icon about__icon--instagram" target="blank"></a>
+          <a href="https://www.facebook.com/" class="about__icon about__icon--facebook animation" target="blank"></a>
+          <a href="https://www.instagram.com/" class="about__icon about__icon--instagram animation" target="blank"></a>
         </div>
       </div>
       <div class="about__schedule">
@@ -217,19 +225,19 @@
 
       <div class="about__round--container">
         <a href="#">
-          <div class="about__round">
+          <div class="about__round animation">
           </div>
         </a>
       </div>
       <div class="about__line"></div>
 
       <div class="about__links--1">
-        <a href="#gallery" class="about__paragraph about__paragraph--gallery">Галерея</a>
-        <a href="#events" class="about__paragraph about__paragraph--events">Виставки та події</a>
+        <a href="#gallery" class="about__paragraph about__paragraph--gallery link__animation">Галерея</a>
+        <a href="#events" class="about__paragraph about__paragraph--events link__animation">Виставки та події</a>
       </div>
       <div class="about__links--2">
-        <a href="#contacts" class="about__paragraph about__paragraph--about">Про Нас</a>
-        <a href="#contacts" class="about__paragraph about__paragraph--contacts">Контакти</a>
+        <a href="#contacts" class="about__paragraph about__paragraph--about link__animation">Про Нас</a>
+        <a href="#contacts" class="about__paragraph about__paragraph--contacts link__animation">Контакти</a>
       </div>
     </section>
 
